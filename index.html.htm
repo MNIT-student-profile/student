@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MNIT Student Profile</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        /* Top header */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ccc;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 70px;
+            margin-right: 15px;
+        }
+        .logo-text {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+        .top-right-user {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        .top-right-user img {
+            height: 55px;
+            width: 55px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        /* Main menu under header */
+        .menu-bar {
+            display: flex;
+            background-color: #e6e6e6;
+            border-bottom: 1px solid #ccc;
+            padding: 5px 20px;
+            font-size: 13px;
+        }
+        .menu-bar button {
+            margin-right: 10px;
+            padding: 5px 12px;
+            border: 1px solid #999;
+            background-color: #f7f7f7;
+            cursor: pointer;
+        }
+        .menu-bar .right-icons {
+            margin-left: auto;
+        }
+        .menu-bar .right-icons button {
+            margin-left: 5px;
+        }
+        /* Main content area */
+        .container {
+            display: flex;
+            padding: 10px 10px 40px 10px;
+        }
+        /* Left sidebar */
+        .sidebar {
+            width: 230px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            font-size: 13px;
+        }
+        .sidebar-section-title {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f1f1f1;
+            font-weight: bold;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding-left: 15px;
+            margin: 0;
+        }
+        .sidebar li {
+            padding: 4px 0;
+            cursor: pointer;
+        }
+        .sidebar li:hover {
+            text-decoration: underline;
+        }
+        /* Center content */
+        .content-area {
+            flex: 1;
+        }
+        .year-select {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .id-card-wrapper {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 15px 25px 25px 25px;
+        }
+        .id-card-header {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .id-card-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        .id-card-left {
+            width: 70%;
+        }
+        .id-card-right {
+            text-align: center;
+            width: 30%;
+        }
+        .id-photo {
+            margin-top: 5px;
+        }
+        .id-photo img {
+            height: 110px;
+            width: 90px;
+            border: 1px solid #000;
+        }
+        .field-label {
+            font-weight: bold;
+        }
+        .details-box {
+            margin-top: 15px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            font-size: 13px;
+        }
+        .details-row {
+            margin-bottom: 4px;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top header -->
+    <div class="top-bar">
+        <div class="logo">
+            <!-- Replace src with actual logo image -->
+            <img src="logo1.jpg" alt="MNIT Logo">
+            <div class="logo-text">
+                Malaviya National Institute of Technology Jaipur<br>
+                <span style="font-size:12px;">Jhalana, Malviya Nagar, Jaipur - 302017</span>
+            </div>
+        </div>
+        <div class="top-right-user">
+            <!-- Replace src with actual user thumbnail -->
+            <img src="id_photo.jpeg" alt="User">
+            <span>Welcome : NEHA </span>
+        </div>
+    </div>
+
+    <!-- Menu bar -->
+    <div class="menu-bar">
+        <button>Profile</button>
+        <button>My Activities</button>
+        <button>Registrations</button>
+        <div class="right-icons">
+            <button>🔔</button>
+            <button>⚙</button>
+            <button>Logout</button>
+        </div>
+    </div>
+
+    <!-- Main layout -->
+    <div class="container">
+
+        <!-- Left sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-section-title">PERSONAL INFO</div>
+            <ul>
+                <li>ID Card Details</li>
+                <li>Update Bank Details</li>
+                <li>Apply for ID Card</li>
+                <li>Summary Form</li>
+                <li>Documents Upload</li>
+                <li>Print Admission Letter</li>
+                <li>Registration Form Print</li>
+                <li>Exam Admit Card</li>
+                <li>Grade Sheet</li>
+                <li>Anti Ragging</li>
+            </ul>
+            <div class="sidebar-section-title">MY SCHOLARSHIP</div>
+            <div class="sidebar-section-title">FEEDBACK, GRIEVANCES &amp; REQUESTS</div>
+            <div class="sidebar-section-title">MY CHALLANS</div>
+            <div class="sidebar-section-title">PH.D SECTION</div>
+            <div class="sidebar-section-title">REPORTS</div>
+        </div>
+
+        <!-- Center content -->
+        <div class="content-area">
+            <div class="year-select">
+                Year :
+                <select>
+                    <option>2025-26</option>
+                </select>
+            </div>
+
+            <div class="id-card-wrapper">
+                <div class="id-card-header">
+                    MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY JAIPUR
+                </div>
+
+                <div class="id-card-row">
+                    <div class="id-card-left">
+                        <div class="details-row">
+                            <span class="field-label">Name</span> : NEHA
+                        </div>
+                        <div class="details-row">
+                            <span class="field-label">Father's Name</span> : MANOJ KUMAR SHRIVASTAV
+                        </div>
+                        <div class="details-row">
+                            <span class="field-label">Program</span> : Ph.D
+                        </div>
+                        <div class="details-row">
+                            <span class="field-label">Department</span> : COMPUTER SCIENCE AND ENGINEERING
+                        </div>
+                        <div class="details-row">
+                            <span class="field-label">Date Of Issue</span> : 08-02-2021
+                        </div>
+                    </div>
+                    <div class="id-card-right">
+                        <div class="details-row">
+                            <span class="field-label">ID No:</span> 2020RCE9524
+                        </div>
+                        <div class="id-photo">
+                            <!-- Replace src with actual ID photo -->
+                            <img src="id_photo.jpeg" alt="ID Photo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details-box">
+                    <div class="details-row">
+                        <span class="field-label">DOB</span> : 13-09-1995
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">Program Duration</span> :
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">E-Mail</span> : shrineha13@gmail.com
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">Ph. No.</span> : 9785101580 (M)
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">Parent's Contact No</span> : 9414444193 (R); 8005804387 (M)
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">Blood Group</span> : B+
+                    </div>
+                    <div class="details-row">
+                        <span class="field-label">Permanent Address</span> : 373, New market Rawatbhata, Chittorgarh - 323307
+                    </div>
+                </div>
+
+                <div class="footer-note">
+                    If there is any discrepancy please write to - mniterp.academic@mnit.ac.in or contact Academic Section.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
